@@ -1,0 +1,199 @@
+.hero {
+    height: 812px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("/img/hero/hero-mob-min-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: url("/img/hero/hero-mob-min@2x-min.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero-container-text {
+    padding-bottom: 38px;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    padding-bottom: 24px;
+}
+
+.hero-paragraf {
+
+    font-size: 12px;
+    line-height: 1.17;
+    color: rgba(251, 251, 251, 0.7);
+    font-weight: 300;
+}
+
+.our-yachts-btn {
+    background: #1b414b;
+    border-radius: 15px;
+    width: 141px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 1s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        transform 1s cubic-bezier(0.165, 0.84, 0.44, 1),
+        color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    cursor: pointer;
+}
+
+.our-yachts-btn:hover,
+.our-yachts-btn:focus {
+    background: #fbfbfb;
+    color: #1b414b;
+    transform: scale(1.2);
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+
+        height: 962px;
+        background-image: url("/img/hero/hero-tablet-min-min.jpg");
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url("/img/hero/hero-tablet-min@2x-min.jpg");
+        }
+    }
+
+    .hero-container {
+        width: 704px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-title {
+        font-size: 70px;
+        padding: 0 24px;
+        padding-bottom: 24px;
+    }
+
+
+
+    .hero-paragraf {
+        width: 695px;
+        line-height: 1.4;
+        font-size: 16px;
+        padding: 0 68px;
+    }
+
+    .hero-container-text {
+        padding-bottom: 48px;
+    }
+
+    .our-yachts-btn {
+        width: 179px;
+        height: 52px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero {
+        height: 800px;
+        background-image: url("/img/hero/hero-dekstop-min-min.jpg");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url("/img/hero/hero-dekstop-min@2x-min.jpg");
+        }
+    }
+
+    .hero-container {
+        width: 1001px;
+    }
+
+    .hero-title {
+        font-size: 80px;
+    }
+
+    .hero-paragraf {
+        width: 1001px;
+        height: 66px;
+        padding: 0 220px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        background-image: url("/img/hero/hero-desktop1440-min.jpg");
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url("/img/hero/hero-dekstop1440-min@2x.jpg");
+        }
+    }
+}
