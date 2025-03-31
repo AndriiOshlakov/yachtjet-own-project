@@ -1,52 +1,7 @@
 .our-yachts-section {
   padding: 40px 0;
-  -webkit-animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-  animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
-@-webkit-keyframes puff-in-bottom {
-  0% {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes puff-in-bottom {
-  0% {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
 
 .our-yachts-container {
   display: flex;
@@ -65,9 +20,6 @@
   transition: transform 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.our-yachts-title:hover {
-  transform: rotatey(360deg);
-}
 
 .our-yachts-list {
   margin-bottom: 40px;
@@ -75,10 +27,6 @@
 
 .our-yachts-list-item {
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.our-yachts-list-item:hover {
-  transform: scale3d(1.2, 1.2, 1.2);
 }
 
 .yath-arrow-item {
@@ -258,6 +206,63 @@
 @media screen and (min-width: 1280px) {
   .yath-belle-item {
     display: block;
+  }
+
+  .our-yachts-section:hover>.our-yachts-container {
+    -webkit-animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: puff-in-bottom 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
+
+  @-webkit-keyframes puff-in-bottom {
+    0% {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes puff-in-bottom {
+    0% {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .our-yachts-title:hover {
+    transform: rotatey(360deg);
+  }
+
+  .our-yachts-list-item:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
   }
 
   .our-yachts-list {
